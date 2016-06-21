@@ -6927,6 +6927,16 @@ input, select {
       -webkit-margin-after: 0em;
       padding: 0px 6px; }
 
+a {
+  color: #8160a1;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  a:hover {
+    color: #066e73; }
+
 footer {
   width: 100%;
   background: #8160a1;
