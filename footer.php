@@ -2,12 +2,23 @@
 			<footer class="footer" role="contentinfo">
 
 				<!-- copyright -->
-				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
-				</p>
-				<!-- /copyright -->
+				<div class="item">
+					<div class="sub-item">
+						Follow us
+					</div>
+					<div class="sub-item">
+						<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+					</div>
+				</div>
 
+				<!-- /copyright -->
+				<div class="item">
+					<a href="">Terms of Use</a>
+					<a href="">Privacy</a>
+					<a href="">Contact</a>
+				</div>
 			</footer>
 			<!-- /footer -->
 

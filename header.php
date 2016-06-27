@@ -42,9 +42,19 @@
         </script>
 
   <header class="navigation" role="banner">
+    <div class="top-nav">
+      <a href="#" class="item">
+        <div class="text">find your nearest hospital</div><span><img src="<?php echo get_template_directory_uri(); ?>/img/icons/quote-icon.png"/></span>
+      </a>
+      <a href="#" class="item">
+        <div class="text">get an instant quote</div><span><img src="<?php echo get_template_directory_uri(); ?>/img/icons/map-icon.png"/></span>
+      </a>
+    </div>
     <div class="inner">
-      <a href="<?php echo get_home_url(); ?>"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo/core-logo.png"/></a>      
-        <?php matchsticks_nav(); ?>
+      <a href="<?php echo get_home_url(); ?>"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo/aimslogo.png"/></a>      
+        <ul class="slimmenu">
+        <?php html5blank_nav(); ?>
+        </ul>
     </div>
   </header>
 
