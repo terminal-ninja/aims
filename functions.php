@@ -98,8 +98,8 @@ function html5blank_header_scripts()
         wp_register_script('modernizr', get_template_directory_uri() . '/js/lib/modernizr-2.7.1.min.js', array(), '2.7.1'); // Modernizr
         wp_enqueue_script('modernizr'); // Enqueue it!
 
-        wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
-        wp_enqueue_script('html5blankscripts'); // Enqueue it!
+        //wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
+        //wp_enqueue_script('html5blankscripts'); // Enqueue it!
     }
 }
 
@@ -403,7 +403,7 @@ function create_post_type_html5()
     register_post_type('html5-blank', // Register Custom Post Type
         array(
         'labels' => array(
-            'name' => __('HTML5 Blank Custom Post', 'html5blank'), // Rename these to suit
+            'name' => __('Ninja Slider', 'html5blank'), // Rename these to suit
             'singular_name' => __('HTML5 Blank Custom Post', 'html5blank'),
             'add_new' => __('Add New', 'html5blank'),
             'add_new_item' => __('Add New HTML5 Blank Custom Post', 'html5blank'),
@@ -447,6 +447,25 @@ function html5_shortcode_demo($atts, $content = null)
 function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 shortcode, allows for nesting within above element. Fully expandable.
 {
     return '<h2>' . $content . '</h2>';
+}
+
+//Ninja Page Slider
+function ninja_slider()
+{
+
+    $field = get_field('hero_image');
+    if( have_rows('custom_slider') )
+    { 
+      get_template_part('custom-slider'); 
+    }
+     else if (!empty ($field))
+     {
+        get_template_part('hero-image'); 
+     }
+    else 
+    {
+       get_template_part('image-slider'); 
+    }
 }
 
 ?>

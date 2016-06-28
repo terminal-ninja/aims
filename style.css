@@ -6796,6 +6796,10 @@ a img.aligncenter {
 a .fa {
   background: #545454;
   padding: 9px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
   border-radius: 15px;
   width: 30px;
   height: 30px;
@@ -6950,7 +6954,8 @@ a {
 footer {
   width: 100%;
   background: #1d2e37;
-  color: white; }
+  color: white;
+  font-weight: bold; }
   footer::after {
     clear: both;
     content: "";
@@ -6959,17 +6964,20 @@ footer {
     padding: 25px; }
     footer .item:nth-child(2) {
       float: right; }
+      footer .item:nth-child(2) a {
+        color: white;
+        font-weight: bold;
+        padding: 0 10px;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+        footer .item:nth-child(2) a:hover {
+          color: white;
+          border-bottom: 1px solid white; }
     footer .item:nth-child(1) .sub-item:nth-child(1) {
       padding: 6px 20px; }
-    footer .item .sub-item a .fa {
-      background: #545454;
-      padding: 9px;
-      border-radius: 15px;
-      width: 30px;
-      height: 30px;
-      color: white; }
-      footer .item .sub-item a .fa.fa-google-plus {
-        padding: 8px 5px; }
 
 header.navigation .top-nav {
   background: #066e73;
@@ -7018,6 +7026,11 @@ header.navigation .inner {
     float: left; }
     header.navigation .inner ul li {
       font-weight: bold;
-      display: inline-block; }
+      display: inline-block;
+      padding: 26px 0; }
+      header.navigation .inner ul li a {
+        padding: 0 10px; }
+  header.navigation .inner .sub-item {
+    padding: 18px 10px; }
 
 /*# sourceMappingURL=style.css.map */

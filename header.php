@@ -55,7 +55,14 @@
         <ul class="slimmenu">
         <?php html5blank_nav(); ?>
         </ul>
+        <div class="sub-item">
+            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+        </div>
     </div>
   </header>
 
   <body <?php body_class(); ?> >
+
+  <?php ninja_slider(); ?>

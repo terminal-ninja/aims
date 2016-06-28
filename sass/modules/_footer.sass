@@ -3,25 +3,24 @@ footer
   width: 100%
   background: $prime-color2
   color: white
-  
+  font-weight: bold
   .item
     padding: 25px
     &:nth-child(2)
       float: right
+      a
+        color: white
+        font-weight: bold
+        padding: 0 10px
+        @include vendor-prefix('transition','all 0.3s ease')
+        &:hover
+          color: white
+          border-bottom: 1px solid white
     &:nth-child(1)
       .sub-item
         &:nth-child(1)
           padding: 6px 20px
-    .sub-item
-      a .fa
-        background: $prime-color3
-        padding: 9px
-        border-radius: 15px
-        width: 30px
-        height: 30px
-        color: white
-        &.fa-google-plus
-          padding: 8px 5px
+      
 //   color: $whitest
 //   a
 //     color: $whitest
