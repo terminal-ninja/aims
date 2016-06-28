@@ -1,43 +1,36 @@
 <?php /* Template Name: Home Page Template */ get_header(); ?>
 
-  <main role="main">
-    <!-- section -->
-    <section>
-
-      <h1><?php the_title(); ?></h1>
-
-    <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-
-      <!-- article -->
-      <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-        <?php the_content(); ?>
-
-        <?php comments_template( '', true ); // Remove if you don't want comments ?>
-
-        <br class="clear">
-
-        <?php edit_post_link(); ?>
-
-      </article>
-      <!-- /article -->
-
-    <?php endwhile; ?>
-
-    <?php else: ?>
-
-      <!-- article -->
-      <article>
-
-        <h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
-
-      </article>
-      <!-- /article -->
-
-    <?php endif; ?>
-
-    </section>
-    <!-- /section -->
-  </main>
+  <section class="content services">
+    <article>
+      <figure>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/icons/services-icon.png" alt="">
+        <h2 class="text">services</h2>
+      </figure>
+      <p>Assist our clients with a Dynamic Product offering, tailored to their specfic needs</p>
+      <div class="button">
+        <a href="#" class="primary">READ MORE</a>
+      </div>
+    </article>
+    <article>
+      <figure>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/icons/benefits-icon.png" alt="">
+        <h2 class="text">benefits</h2>
+      </figure>
+      <p>We have an extensive network of contracted hospitals and other providers throughout Sub-Saharan Africa</p>
+      <div class="button">
+        <a href="#" class="primary">READ MORE</a>
+      </div>
+    </article>
+    <article>
+      <figure>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/icons/specialists-icon.png" alt="">
+        <h2 class="text">specialists</h2>
+      </figure>
+      <p>24 hour access to  wide range of medical specialists can consult at any time of the day</p>
+      <div class="button">
+        <a href="#" class="primary">READ MORE</a>
+      </div>
+    </article>
+  </section>
 
 <?php get_footer(); ?>
