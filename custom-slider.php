@@ -8,9 +8,9 @@
                 <img src="<?php the_sub_field('image'); ?>">
                 <div class="overlay">
                   <h2 class="hero-heading"><?php the_sub_field('headline'); ?></h2>
-                  <div class="button">
-                    <a href="<?php the_field('pagepost_link'); ?>" class="primary"><?php the_sub_field('button'); ?></a>
-                  </div>
+                  <!-- <div class="button">
+                    <a href="<?php the_field('pagepost_link'); ?>" class="primary"><?php //the_sub_field('button'); ?></a>
+                  </div> -->
                 </div>
               </li>
           <?php endwhile;
