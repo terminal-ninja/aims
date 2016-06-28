@@ -24,7 +24,7 @@ $(document).ready(function(){
     adaptiveHeight: true,
     responsive: true,
     pause: 5000,
-    auto: true,
+    auto: false,
     onSliderLoad: function(){
       $('.bxslider').css('visibility', 'visible');
     }

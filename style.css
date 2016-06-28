@@ -2360,7 +2360,7 @@ li {
     width: 100%; }
   .bx-wrapper .bx-loading {
     min-height: 50px;
-    background: url(images/hero/bx_loader.gif) center center no-repeat #fff;
+    background: url(img/hero/bx_loader.gif) center center no-repeat #fff;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -2397,10 +2397,10 @@ li {
       background: #000; }
   .bx-wrapper .bx-prev {
     left: 10px;
-    background: url(images/hero/controls.png) no-repeat 0 -32px; }
+    background: url(img/hero/controls.png) no-repeat 0 -32px; }
   .bx-wrapper .bx-next {
     right: 10px;
-    background: url(images/hero/controls.png) no-repeat -43px -32px; }
+    background: url(img/hero/controls.png) no-repeat -43px -32px; }
   .bx-wrapper .bx-prev:hover {
     background-position: 0 0; }
   .bx-wrapper .bx-next:hover {
@@ -2424,7 +2424,7 @@ li {
       width: 10px;
       height: 11px;
       outline: 0;
-      background: url(images/hero/controls.png) -86px -11px no-repeat;
+      background: url(img/hero/controls.png) -86px -11px no-repeat;
       margin: 0 3px; }
       .bx-wrapper .bx-controls-auto .bx-start:hover, .bx-wrapper .bx-controls-auto .bx-start.active {
         background-position: -86px 0; }
@@ -2434,7 +2434,7 @@ li {
       width: 9px;
       height: 11px;
       outline: 0;
-      background: url(images/hero/controls.png) -86px -44px no-repeat;
+      background: url(img/hero/controls.png) -86px -44px no-repeat;
       margin: 0 3px; }
       .bx-wrapper .bx-controls-auto .bx-stop:hover, .bx-wrapper .bx-controls-auto .bx-stop.active {
         background-position: -86px -33px; }
@@ -6991,8 +6991,7 @@ header.navigation .top-nav {
     -moz-box-shadow: 0 0 0;
     -ms-box-shadow: 0 0 0;
     -o-box-shadow: 0 0 0;
-    box-shadow: 0 0 0;
-    margin-top: 80px; }
+    box-shadow: 0 0 0; }
   .bx-wrapper .bx-pager {
     bottom: 0px; }
     .bx-wrapper .bx-pager a.active {
@@ -7000,6 +6999,8 @@ header.navigation .top-nav {
 
 .bxslider {
   visibility: hidden; }
+  .bxslider img {
+    width: 100%; }
 
 .hero-slider {
   width: 100%;
@@ -7025,48 +7026,6 @@ header.navigation .top-nav {
     line-height: 42px;
     margin-bottom: 2px;
     text-transform: none; }
-
-.news-slider {
-  height: 333px;
-  margin-top: 80px;
-  overflow: hidden; }
-  .news-slider .overlay {
-    bottom: 70px; }
-    .news-slider .overlay img {
-      width: auto; }
-
-.hero {
-  width: 100%;
-  margin: 50px auto 0px auto;
-  height: 333px;
-  overflow: hidden; }
-  .hero .hero-image {
-    height: 333px;
-    overflow: hidden;
-    position: relative; }
-    .hero .hero-image img {
-      position: absolute;
-      right: 0; }
-    .hero .hero-image .overlay {
-      position: absolute;
-      left: 0;
-      bottom: 60px;
-      width: 500px;
-      background: #066e73;
-      margin: 19% 0 0 0;
-      padding: 10px 0 10px 45px; }
-      .hero .hero-image .overlay h1 {
-        color: #fff;
-        text-align: left;
-        margin: 0; }
-      .hero .hero-image .overlay p {
-        color: #fff;
-        margin: 0; }
-
-.technologies .bx-prev {
-  left: -50px; }
-.technologies .bx-next {
-  right: -50px; }
 
 @media screen and (max-width: 1024px) {
   .hero-slider .overlay {

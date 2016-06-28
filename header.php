@@ -52,9 +52,9 @@
     </div>
     <div class="inner">
       <a href="<?php echo get_home_url(); ?>"><img class="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo/aimslogo.png"/></a>      
-        <ul class="slimmenu">
+        
         <?php html5blank_nav(); ?>
-        </ul>
+        
         <div class="sub-item">
             <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
             <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
