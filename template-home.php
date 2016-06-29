@@ -33,4 +33,37 @@
     </article>
   </section>
 
+  <section class="content news">
+    <article>
+      <h2>latest news</h2>
+      <div class="item">
+        <figure>
+          <img src="<?php echo get_template_directory_uri(); ?>/img/news/news1.jpg" alt="">
+        </figure>
+        <h2>Heading 1</h2>
+        <p>Assist our cliebts with a Dynamic Product offering, tailored to their specfic needs</p>
+        <div class="button">
+          <a href="#" class="primary">READ MORE</a>
+        </div>
+      </div>
+    </article>
+     <article>
+      <div class="item">
+        <figure>
+          <img src="<?php echo get_template_directory_uri(); ?>/img/news/news2.jpg" alt="">
+        </figure>
+        <h2>Heading 1</h2>
+        <p>Assist our cliebts with a Dynamic Product offering, tailored to their specfic needs</p>
+        <div class="button">
+          <a href="#" class="primary">READ MORE</a>
+        </div>
+      </div>
+    </article>
+    <article>
+      <h2>areas of operation</h2>
+      <figure>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/areas-operation.png" alt="">
+      </figure>
+    </article>
+  </section>
 <?php get_footer(); ?>
